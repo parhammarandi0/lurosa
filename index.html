@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lurosa — Hair Salon</title>
+    <meta
+      name="description"
+      content="Lurosa is a premium women's hair salon in Erina, NSW — precision cuts, custom color, and bespoke styling in a quiet, considered space."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="img/hero-cut.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="logo.webp" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/webp" href="logo.webp" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true">
+      <span class="aurora__blob aurora__blob--1"></span>
+      <span class="aurora__blob aurora__blob--2"></span>
+      <span class="aurora__blob aurora__blob--3"></span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="brand" aria-label="Lurosa, home">
+          <img class="brand__logo" src="logo.webp" alt="Lurosa" width="44" height="44" />
+          <span class="brand__word">Lurosa</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#team">Team</a>
+          <a href="#visit">Visit</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="tel:+61243093929" class="nav__phone" aria-label="Call Lurosa">
+            <svg
+              class="nav__phone-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.95.36 1.88.7 2.77a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.31-1.31a2 2 0 0 1 2.11-.45c.89.34 1.82.57 2.77.7a2 2 0 0 1 1.72 2.07z"
+              />
+            </svg>
+            <span>(02) 4309 3929</span>
+          </a>
+          <a
+            href="https://wa.me/61401233618?text=Hi%20Lurosa%2C%20I%27d%20like%20to%20book%20an%20appointment."
+            target="_blank"
+            rel="noopener"
+            class="btn btn--ghost nav__cta"
+          >Book</a>
+        </div>
+
+        <button
+          class="nav__toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile" id="mobile-menu" hidden>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#visit">Visit</a>
+        <a href="tel:+61243093929" class="mobile__call">Call (02) 4309 3929</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="carousel" id="top" aria-label="Our services">
+        <div class="carousel__track" id="carouselTrack">
+          <div class="carousel__slide is-active" data-slide="0">
+            <img
+              src="img/hero-cut.webp" fetchpriority="high" width="2000" height="1333"
+              alt="Cut and style"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="carousel__caption">
+              <p class="eyebrow">Service</p>
+              <h2>Cut &amp; Style</h2>
+              <p>Considered shape, finished the way you'd wear it.</p>
+            </div>
+          </div>
+          <div class="carousel__slide" data-slide="1">
+            <img
+              src="img/hero-color.webp"
+              alt="Color"
+              loading="lazy"
+              decoding="async"
+              width="2000"
+              height="1333"
+            />
+            <div class="carousel__caption">
+              <p class="eyebrow">Service</p>
+              <h2>Color</h2>
+              <p>Custom-mixed at the bowl for tone you'll actually want.</p>
+            </div>
+          </div>
+          <div class="carousel__slide" data-slide="2">
+            <img
+              src="img/hero-treatments.webp"
+              alt="Treatments"
+              loading="lazy"
+              decoding="async"
+              width="1333"
+              height="2000"
+            />
+            <div class="carousel__caption">
+              <p class="eyebrow">Service</p>
+              <h2>Treatments</h2>
+              <p>Strength, shine, and scalp health between visits.</p>
+            </div>
+          </div>
+          <div class="carousel__slide" data-slide="3">
+            <img
+              src="img/hero-styling.webp"
+              alt="Styling"
+              loading="lazy"
+              decoding="async"
+              width="2000"
+              height="1333"
+            />
+            <div class="carousel__caption">
+              <p class="eyebrow">Service</p>
+              <h2>Styling</h2>
+              <p>For events, work, or simply because.</p>
+            </div>
+          </div>
+          <div class="carousel__slide" data-slide="4">
+            <img
+              src="img/hero-makeup.webp"
+              alt="Makeup and upstyle"
+              loading="lazy"
+              decoding="async"
+              width="1333"
+              height="2000"
+            />
+            <div class="carousel__caption">
+              <p class="eyebrow">Service</p>
+              <h2>Makeup &amp; Upstyle</h2>
+              <p>For weddings, events, and special occasions.</p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://wa.me/61401233618?text=Hi%20Lurosa%2C%20I%27d%20like%20to%20book%20an%20appointment."
+          target="_blank"
+          rel="noopener"
+          class="btn btn--solid carousel__cta"
+        >Book an appointment</a>
+
+        <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Slides">
+          <button class="carousel__dot is-active" data-dot="0" aria-label="Go to slide 1"></button>
+          <button class="carousel__dot" data-dot="1" aria-label="Go to slide 2"></button>
+          <button class="carousel__dot" data-dot="2" aria-label="Go to slide 3"></button>
+          <button class="carousel__dot" data-dot="3" aria-label="Go to slide 4"></button>
+          <button class="carousel__dot" data-dot="4" aria-label="Go to slide 5"></button>
+        </div>
+
+        <button type="button" class="carousel__scroll" id="carouselScroll" aria-label="Scroll to content">
+          <span class="carousel__scroll-label">Scroll</span>
+          <span class="carousel__scroll-line"></span>
+        </button>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about__grid">
+          <div class="about__label">
+            <p class="eyebrow">About</p>
+            <figure class="about__image">
+              <img
+                src="img/about.webp"
+                alt="Inside the Lurosa salon"
+                loading="lazy"
+                decoding="async"
+                width="1400"
+                height="933"
+              />
+            </figure>
+          </div>
+          <div class="about__body">
+            <h2>
+              Built around the chair, not the trend cycle.
+            </h2>
+            <p>
+              Lurosa was founded on a simple idea — that good hair starts with
+              listening. We take time at the start of every appointment to
+              understand your hair, your routine, and what you actually want
+              to wake up to. The work follows from there.
+            </p>
+            <p>
+              Our team trains continuously in cutting and color technique, and
+              we use professional-grade products chosen for performance, scalp
+              health, and clean formulations. The space is small by design —
+              calm, unhurried, and yours for the time you're with us.
+            </p>
+            <ul class="pillars">
+              <li>
+                <h3>Precision</h3>
+                <p>
+                  Cuts engineered to your hair pattern, face shape, and the
+                  way you actually style.
+                </p>
+              </li>
+              <li>
+                <h3>Custom color</h3>
+                <p>
+                  Tones mixed at the bowl. No off-the-shelf formulas, no
+                  shortcuts.
+                </p>
+              </li>
+              <li>
+                <h3>Care</h3>
+                <p>
+                  Scalp- and strand-first products that keep hair healthy
+                  between visits.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section section--alt" id="services">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Packages</p>
+            <h2>Packages</h2>
+            <p class="section__lede">
+              Using premium professional colour by Pravana. $25 for extra
+              hair length or thickness on all packages.
+            </p>
+          </header>
+
+          <div class="services__grid">
+            <article class="service">
+              <header>
+                <h3>Regrowth Pack</h3>
+                <p class="service__price">$85</p>
+              </header>
+              <ul>
+                <li>Regrowth</li>
+                <li>Treatment</li>
+                <li>Blowdry</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="Regrowth Pack" data-price="$85">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Full Colour Pack</h3>
+                <p class="service__price">$105</p>
+              </header>
+              <ul>
+                <li>Full Colour</li>
+                <li>Treatment</li>
+                <li>Blowdry</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="Full Colour Pack" data-price="$105">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>1/2 Head Foils Pack</h3>
+                <p class="service__price">$145</p>
+              </header>
+              <ul>
+                <li>1/2 Head Foils</li>
+                <li>Treatment</li>
+                <li>Blowdry</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="1/2 Head Foils Pack" data-price="$145">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Full Colour 10 Foils Pack</h3>
+                <p class="service__price">$135</p>
+              </header>
+              <ul>
+                <li>Full Colour</li>
+                <li>10 Foils</li>
+                <li>Treatment</li>
+                <li>Blowdry</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="Full Colour 10 Foils Pack" data-price="$135">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Full Head Foils Pack</h3>
+                <p class="service__price">$185</p>
+              </header>
+              <ul>
+                <li>Full Head Foils</li>
+                <li>Treatment</li>
+                <li>Blowdry</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="Full Head Foils Pack" data-price="$185">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>1/2 Head Foils &amp; Full Colour Pack</h3>
+                <p class="service__price">$175</p>
+              </header>
+              <ul>
+                <li>1/2 Head Foils</li>
+                <li>Full Colour</li>
+                <li>Treatment</li>
+                <li>Blowdry</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="1/2 Head Foils & Full Colour Pack" data-price="$175">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Nano Plastia</h3>
+                <p class="service__price">$250</p>
+              </header>
+              <ul>
+                <li>Micromist Treatment</li>
+                <li>Trim</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="Nano Plastia" data-price="$250">Book</button>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Makeup &amp; Upstyle</h3>
+                <p class="service__price">$180</p>
+              </header>
+              <ul>
+                <li>Makeup application</li>
+                <li>Upstyle</li>
+              </ul>
+              <button type="button" class="btn btn--ghost service__book" data-package="Makeup & Upstyle" data-price="$180">Book</button>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">The work</p>
+            <h2>A look around the room.</h2>
+            <p class="section__lede">
+              Cuts, color, and quiet moments — a small selection from the
+              chair.
+            </p>
+          </header>
+
+          <div class="gallery__grid" id="galleryGrid">
+            <!-- gallery items injected by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <section class="team section" id="team">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Team</p>
+            <h2>The chairs</h2>
+            <p class="section__lede">
+              A small bench, deliberately. Each stylist takes a limited number
+              of clients to keep the work — and the room — calm.
+            </p>
+          </header>
+
+          <div class="team__grid">
+            <article class="stylist">
+              <div class="stylist__portrait" data-initial="N"></div>
+              <h3>Neda</h3>
+            </article>
+
+            <article class="stylist">
+              <div class="stylist__portrait" data-initial="A"></div>
+              <h3>Ana</h3>
+            </article>
+
+            <article class="stylist">
+              <div class="stylist__portrait" data-initial="S"></div>
+              <h3>Shelly</h3>
+            </article>
+
+            <article class="stylist">
+              <div class="stylist__portrait" data-initial="C"></div>
+              <h3>Chloe</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section section--alt" id="reviews">
+        <div class="container">
+          <header class="section__head reviews__head">
+            <p class="eyebrow">Reviews</p>
+            <h2>What guests are saying.</h2>
+            <div class="reviews__summary" id="reviewsSummary">
+              <span class="reviews__rating" id="reviewsRating">4.9</span>
+              <span class="reviews__stars" aria-hidden="true">
+                <span class="reviews__stars-fill" id="reviewsStarsFill" style="width: 98%"></span>
+              </span>
+              <span class="reviews__meta">
+                <span id="reviewsCount">120+ reviews</span>
+                <a
+                  class="reviews__link"
+                  href="https://www.google.com/maps/search/?api=1&query=Lurosa+Hair+Erina"
+                  target="_blank"
+                  rel="noopener"
+                >on Google →</a>
+              </span>
+            </div>
+          </header>
+
+          <ul class="reviews__list" id="reviewsList" aria-live="polite">
+            <!-- review cards injected by script.js -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="visit section" id="visit">
+        <div class="container visit__grid">
+          <div class="visit__copy">
+            <p class="eyebrow">Visit</p>
+            <h2>Find the studio.</h2>
+            <p>
+              Tucked along Terrigal Drive in a quiet ground-floor space.
+              Street parking is available out front, with additional parking
+              a short walk away.
+            </p>
+
+            <dl class="visit__details">
+              <div>
+                <dt>Address</dt>
+                <dd>
+                  287 Terrigal Drive<br />
+                  Erina NSW 2250
+                </dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+61243093929">(02) 4309 3929</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>
+                  <a href="mailto:hello@lurosa.com">hello@lurosa.com</a>
+                </dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>
+                  Tue – Sat · 9am – 7pm<br />
+                  Sun · 10am – 4pm<br />
+                  Mon · Closed
+                </dd>
+              </div>
+            </dl>
+
+            <div class="visit__socials" aria-label="Social media">
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Lurosa on Instagram"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Lurosa on Facebook"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://tiktok.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Lurosa on TikTok"
+              >
+                TikTok
+              </a>
+              <a
+                href="https://pinterest.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Lurosa on Pinterest"
+              >
+                Pinterest
+              </a>
+            </div>
+          </div>
+
+          <div class="visit__map">
+            <iframe
+              title="Map showing Lurosa at 287 Terrigal Drive, Erina NSW 2250"
+              src="https://www.google.com/maps?q=287+Terrigal+Drive,+Erina+NSW+2250&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              class="visit__directions"
+              href="https://www.google.com/maps/dir/?api=1&destination=287+Terrigal+Drive,+Erina+NSW+2250"
+              target="_blank"
+              rel="noopener"
+            >
+              Get directions →
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img class="brand__logo brand__logo--footer" src="logo.webp" alt="Lurosa" width="48" height="48" />
+          <span class="brand__word">Lurosa</span>
+          <p>A women's salon in Erina, NSW.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#visit">Visit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+61243093929">(02) 4309 3929</a></li>
+            <li><a href="mailto:hello@lurosa.com">hello@lurosa.com</a></li>
+            <li>287 Terrigal Dr, Erina NSW</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Follow</h4>
+          <ul>
+            <li>
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/" target="_blank" rel="noopener">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://tiktok.com/" target="_blank" rel="noopener">
+                TikTok
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com/" target="_blank" rel="noopener">
+                Pinterest
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer__base">
+        <p>© <span id="year"></span> Lurosa Studio. All rights reserved.</p>
+        <p class="footer__fine">
+          By appointment. Cancellations within 24 hours of your booking incur
+          a 50% fee.
+        </p>
+      </div>
+    </footer>
+
+    <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__panel" role="document">
+        <button type="button" class="modal__close" data-close aria-label="Close">×</button>
+        <p class="eyebrow">Book</p>
+        <h3 id="bookingTitle">Package</h3>
+        <p class="modal__lede">A few quick details — we'll continue the conversation on WhatsApp.</p>
+        <form id="bookingForm" class="modal__form" novalidate>
+          <label for="b_name">Name</label>
+          <input id="b_name" name="name" type="text" autocomplete="name" required />
+
+          <label for="b_stylist">Preferred stylist</label>
+          <select id="b_stylist" name="stylist">
+            <option value="No preference">No preference</option>
+            <option value="Neda">Neda</option>
+            <option value="Ana">Ana</option>
+            <option value="Shelly">Shelly</option>
+            <option value="Chloe">Chloe</option>
+          </select>
+
+          <label for="b_length">Hair length</label>
+          <select id="b_length" name="length">
+            <option value="Short">Short</option>
+            <option value="Medium">Medium</option>
+            <option value="Long">Long</option>
+            <option value="Extra long">Extra long</option>
+          </select>
+
+          <label for="b_notes">Notes</label>
+          <textarea id="b_notes" name="notes" rows="3" placeholder="Anything we should know — preferred day/time, allergies, etc."></textarea>
+
+          <div class="modal__actions">
+            <button type="button" class="btn btn--text" data-close>Cancel</button>
+            <button type="submit" class="btn btn--solid">Continue on WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Gallery image">
+      <button class="lightbox__close" data-lightbox-close aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous">‹</button>
+      <img class="lightbox__img" id="lightboxImg" alt="" />
+      <button class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next">›</button>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
